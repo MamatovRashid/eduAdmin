@@ -87,6 +87,7 @@ export default {
     },
     mounted(){
         this.edit()
+        this.toggle = false
     },
     methods: {
         save () {

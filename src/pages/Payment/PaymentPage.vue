@@ -71,6 +71,7 @@ export default {
     },
     mounted(){
         this.index = this.$route.params.id
+        this.toggle = false
     },
     computed: {
         user() {
@@ -205,8 +206,7 @@ label{
 }
 select, input{
     outline: none;
-    padding: 5px;
-    margin-bottom: 8px;
+    padding: 3px;
     border: 1px solid #118AB2;
     font-size: 20px;
     width: 150px;

@@ -91,6 +91,9 @@ export default {
       toggle: false,
     };
   },
+  mounted(){
+    this.toggle = false
+  }
 }
 </script>
 
