@@ -12,7 +12,7 @@
               </div>
               <div class="inputs">
                   <label for="">Telefon raqami:</label>
-                  <input v-model="form.phone" type="text">
+                  <input v-model="form.phone" type="number">
               </div>
               <div class="inputs">
                   <label for="">Manzili:</label>
@@ -28,11 +28,11 @@
               </div>
               <div class="inputs">
                   <label for="">Ota-ona telefon raqami:</label>
-                  <input v-model="form.parents_phone" type="text">
+                  <input v-model="form.parents_phone" type="number">
               </div>
               <div class="save">
                   <button @click="save()">{{ saqlash }}</button>
-                  <button>Orqaga qaytish</button>
+                  <button @click="$router.go(-1)">Orqaga qaytish</button>
               </div>
           </div>
           <div class="right">
@@ -186,6 +186,16 @@ export default {
 .inputs input:focus{
     box-shadow: 0px 0px 12px #118AB2;
 }
+.inputs input::-webkit-outer-spin-button,
+.inputs input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inputs input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .save{
     display: flex;
     flex-wrap: wrap;

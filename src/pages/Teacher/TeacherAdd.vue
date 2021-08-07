@@ -24,7 +24,7 @@
               </div>
               <div class="save">
                   <button @click="saveTeacher()">{{ saqlash }}</button>
-                  <button>Orqaga qaytish</button>
+                  <button @click="$router.go(-1)">Orqaga qaytish</button>
               </div>
           </div>
       </div>
@@ -90,6 +90,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.addStudent .box{
+    justify-content: start !important;
+}
 </style>

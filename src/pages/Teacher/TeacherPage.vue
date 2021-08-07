@@ -70,4 +70,7 @@ export default {
 .info p{
     font-size: 20px;
 }
+.addStudent .box{
+    justify-content: start !important;
+}
 </style>
